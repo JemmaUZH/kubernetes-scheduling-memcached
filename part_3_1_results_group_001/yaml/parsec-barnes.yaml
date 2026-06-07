@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: parsec-barnes
+spec:
+  template:
+    spec:
+      containers:
+      - image: anakli/cca:splash2x_barnes
+        name: parsec-barnes
+        imagePullPolicy: Always
+        command: ["/bin/sh"]
+        args: ["-c", "taskset -c 6-7 ./run -a run -S splash2x -p barnes -i native -n 2"]
+      restartPolicy: Never
+      nodeSelector:
+        cca-project-nodetype: "node-a"

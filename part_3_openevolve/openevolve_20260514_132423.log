@@ -1,0 +1,76 @@
+2026-05-14 13:24:23,017 - openevolve.controller - INFO - Logging to openevolve_out/logs/openevolve_20260514_132423.log
+2026-05-14 13:24:23,033 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-05-14 13:24:23,058 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: Qwen/Qwen3.5-27B
+2026-05-14 13:24:23,059 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: Qwen/Qwen3.5-27B (weight: 1.00)
+2026-05-14 13:24:23,065 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-05-14 13:24:23,065 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-05-14 13:24:23,065 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-05-14 13:24:23,066 - openevolve.evaluator - INFO - Successfully loaded evaluation function from evaluator.py
+2026-05-14 13:24:23,066 - openevolve.evaluator - INFO - Initialized evaluator with evaluator.py
+2026-05-14 13:24:23,066 - openevolve.controller - INFO - Initialized OpenEvolve with initial_program.py
+2026-05-14 13:24:23,066 - openevolve.controller - INFO - Adding initial program to database
+2026-05-14 13:30:03,020 - openevolve.evaluator - INFO - Evaluated program d52bb9d1-643f-43b0-addd-35989766ff9b in 339.95s: makespan=328.9504, p95_ms=0.0030, slo_ok=1.0000, combined_score=-328.9504
+2026-05-14 13:30:03,022 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2026-05-14 13:30:03,034 - openevolve.process_parallel - INFO - Initialized process parallel controller with 1 workers
+2026-05-14 13:30:03,035 - openevolve.process_parallel - INFO - Set max None tasks per child
+2026-05-14 13:30:03,036 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-05-14 13:30:03,036 - openevolve.controller - INFO - Using island-based evolution with 5 islands
+2026-05-14 13:30:03,036 - openevolve.database - INFO - Island Status:
+2026-05-14 13:30:03,036 - openevolve.database - INFO -  * Island 0: 1 programs, best=-328.9504, avg=-328.9504, diversity=0.00, gen=0 (best: d52bb9d1-643f-43b0-addd-35989766ff9b)
+2026-05-14 13:30:03,036 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-14 13:30:03,036 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-14 13:30:03,036 - openevolve.database - INFO -    Island 3: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-14 13:30:03,036 - openevolve.database - INFO -    Island 4: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-14 13:30:03,036 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 20 iterations (total: 21)
+2026-05-14 13:30:03,042 - openevolve.process_parallel - INFO - Early stopping disabled
+2026-05-14 13:30:50,594 - openevolve.process_parallel - WARNING - Iteration 1 error: No valid diffs found in response
+2026-05-14 13:31:37,250 - openevolve.process_parallel - WARNING - Iteration 2 error: No valid diffs found in response
+2026-05-14 13:32:22,410 - openevolve.process_parallel - WARNING - Iteration 3 error: No valid diffs found in response
+2026-05-14 13:33:08,298 - openevolve.process_parallel - WARNING - Iteration 4 error: No valid diffs found in response
+2026-05-14 13:33:55,197 - openevolve.process_parallel - WARNING - Iteration 5 error: No valid diffs found in response
+2026-05-14 13:34:42,589 - openevolve.process_parallel - WARNING - Iteration 6 error: No valid diffs found in response
+2026-05-14 13:35:29,510 - openevolve.process_parallel - WARNING - Iteration 7 error: No valid diffs found in response
+2026-05-14 13:36:15,999 - openevolve.process_parallel - WARNING - Iteration 8 error: No valid diffs found in response
+2026-05-14 13:43:15,837 - openevolve.database - INFO - New MAP-Elites cell occupied in island 3: {'complexity': 9, 'diversity': 5}
+2026-05-14 13:43:15,837 - openevolve.process_parallel - INFO - Iteration 9: Program 2366f692-24e2-42aa-9285-7ac27c1e13ba (parent: d52bb9d1-643f-43b0-addd-35989766ff9b) completed in 419.84s
+2026-05-14 13:43:15,837 - openevolve.process_parallel - INFO - Metrics: makespan=362.5414, p95_ms=0.0030, slo_ok=1.0000, combined_score=-362.5414
+2026-05-14 13:43:15,837 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 9
+2026-05-14 13:43:15,837 - openevolve.database - INFO - Island Status:
+2026-05-14 13:43:15,837 - openevolve.database - INFO -  * Island 0: 1 programs, best=-328.9504, avg=-328.9504, diversity=0.00, gen=0 (best: d52bb9d1-643f-43b0-addd-35989766ff9b)
+2026-05-14 13:43:15,838 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-14 13:43:15,838 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-14 13:43:15,838 - openevolve.database - INFO -    Island 3: 1 programs, best=-362.5414, avg=-362.5414, diversity=0.00, gen=1 (best: 2366f692-24e2-42aa-9285-7ac27c1e13ba)
+2026-05-14 13:43:15,838 - openevolve.database - INFO -    Island 4: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-14 13:43:15,839 - openevolve.database - INFO - Saved database with 2 programs to openevolve_out/checkpoints/checkpoint_9
+2026-05-14 13:43:15,839 - openevolve.controller - INFO - Saved best program at checkpoint 9 with metrics: makespan=328.9504, p95_ms=0.0030, slo_ok=1.0000, combined_score=-328.9504
+2026-05-14 13:43:15,839 - openevolve.controller - INFO - Saved checkpoint at iteration 9 to openevolve_out/checkpoints/checkpoint_9
+2026-05-14 13:44:01,220 - openevolve.process_parallel - WARNING - Iteration 10 error: No valid diffs found in response
+2026-05-14 13:44:46,259 - openevolve.process_parallel - WARNING - Iteration 11 error: No valid diffs found in response
+2026-05-14 13:45:31,358 - openevolve.process_parallel - WARNING - Iteration 12 error: No valid diffs found in response
+2026-05-14 13:46:16,440 - openevolve.process_parallel - WARNING - Iteration 13 error: No valid diffs found in response
+2026-05-14 13:53:08,460 - openevolve.process_parallel - INFO - Iteration 14: Program b0713c17-6709-4ccf-bbd7-770b1cde0b70 (parent: 2366f692-24e2-42aa-9285-7ac27c1e13ba) completed in 412.02s
+2026-05-14 13:53:08,460 - openevolve.process_parallel - INFO - Metrics: makespan=364.4570, p95_ms=0.0030, slo_ok=1.0000, combined_score=-364.4570
+2026-05-14 13:53:08,461 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 14
+2026-05-14 13:53:08,461 - openevolve.database - INFO - Island Status:
+2026-05-14 13:53:08,461 - openevolve.database - INFO -  * Island 0: 1 programs, best=-328.9504, avg=-328.9504, diversity=0.00, gen=0 (best: d52bb9d1-643f-43b0-addd-35989766ff9b)
+2026-05-14 13:53:08,461 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-14 13:53:08,461 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-14 13:53:08,461 - openevolve.database - INFO -    Island 3: 2 programs, best=-362.5414, avg=-363.4992, diversity=0.00, gen=2 (best: 2366f692-24e2-42aa-9285-7ac27c1e13ba)
+2026-05-14 13:53:08,461 - openevolve.database - INFO -    Island 4: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-14 13:53:08,463 - openevolve.database - INFO - Saved database with 3 programs to openevolve_out/checkpoints/checkpoint_14
+2026-05-14 13:53:08,464 - openevolve.controller - INFO - Saved best program at checkpoint 14 with metrics: makespan=328.9504, p95_ms=0.0030, slo_ok=1.0000, combined_score=-328.9504
+2026-05-14 13:53:08,464 - openevolve.controller - INFO - Saved checkpoint at iteration 14 to openevolve_out/checkpoints/checkpoint_14
+2026-05-14 13:53:53,632 - openevolve.process_parallel - WARNING - Iteration 15 error: No valid diffs found in response
+2026-05-14 13:54:40,916 - openevolve.process_parallel - WARNING - Iteration 16 error: No valid diffs found in response
+2026-05-14 13:55:28,583 - openevolve.process_parallel - WARNING - Iteration 17 error: No valid diffs found in response
+2026-05-14 13:56:13,648 - openevolve.process_parallel - WARNING - Iteration 18 error: No valid diffs found in response
+2026-05-14 13:56:59,340 - openevolve.process_parallel - WARNING - Iteration 19 error: No valid diffs found in response
+2026-05-14 13:57:44,387 - openevolve.process_parallel - WARNING - Iteration 20 error: No valid diffs found in response
+2026-05-14 13:57:44,387 - openevolve.process_parallel - INFO - ✅ Evolution completed - Maximum iterations reached
+2026-05-14 13:57:44,389 - openevolve.database - INFO - Saved database with 3 programs to openevolve_out/checkpoints/checkpoint_20
+2026-05-14 13:57:44,389 - openevolve.controller - INFO - Saved best program at checkpoint 20 with metrics: makespan=328.9504, p95_ms=0.0030, slo_ok=1.0000, combined_score=-328.9504
+2026-05-14 13:57:44,389 - openevolve.controller - INFO - Saved checkpoint at iteration 20 to openevolve_out/checkpoints/checkpoint_20
+2026-05-14 13:57:44,493 - openevolve.process_parallel - INFO - Stopped process pool
+2026-05-14 13:57:44,494 - openevolve.controller - INFO - Using tracked best program: d52bb9d1-643f-43b0-addd-35989766ff9b
+2026-05-14 13:57:44,494 - openevolve.controller - INFO - Evolution complete. Best program has metrics: makespan=328.9504, p95_ms=0.0030, slo_ok=1.0000, combined_score=-328.9504
+2026-05-14 13:57:44,494 - openevolve.controller - INFO - Saved best program to openevolve_out/best/best_program.py with program info to openevolve_out/best/best_program_info.json
